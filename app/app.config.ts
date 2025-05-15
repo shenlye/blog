@@ -42,8 +42,7 @@ export default defineAppConfig({
         /** 侧边栏底部图标导航 */
         iconNav: [
             { icon: 'ph:house-bold', text: '个人主页', url: blogConfig.author.homepage },
-            { icon: 'ri:qq-line', text: '交流群: 169994096', url: 'https://jq.qq.com/?_wv=1027&k=lQfNSeEd' },
-            { icon: 'ph:github-logo-bold', text: 'GitHub: L33Z22L11', url: 'https://github.com/L33Z22L11' },
+            { icon: 'ph:github-logo-bold', text: 'GitHub: shenlyy', url: 'https://github.com/shenlye' },
             { icon: 'ph:rss-simple-bold', text: 'Atom订阅', url: '/atom.xml' },
             { icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/go-by-clouds.html' },
         ] satisfies NavItem[],
@@ -60,8 +59,7 @@ export default defineAppConfig({
             {
                 title: '社交',
                 items: [
-                    { icon: 'ph:github-logo-bold', text: 'L33Z22L11', url: 'https://github.com/L33Z22L11' },
-                    { icon: 'ri:qq-line', text: '群: 169994096', url: 'https://jq.qq.com/?_wv=1027&k=lQfNSeEd' },
+                    { icon: 'ph:github-logo-bold', text: 'shenlyy', url: 'https://github.com/shenlye' },
                     { icon: 'ph:envelope-simple-bold', text: blogConfig.author.email, url: `mailto:${blogConfig.author.email}` },
                 ],
             },
@@ -69,8 +67,7 @@ export default defineAppConfig({
                 title: '信息',
                 items: [
                     { icon: 'simple-icons:nuxtdotjs', text: 'Nuxt开源博客主题', url: 'https://github.com/L33Z22L11/blog-v3' },
-                    { icon: 'ph:swatches-bold', text: '主题和组件文档', url: '/theme' },
-                    { icon: 'ph:certificate-bold', text: '萌备20246888号', url: 'https://icp.gov.moe/?keyword=20246888' },
+                    { icon: 'ph:swatches-bold', text: '主题和组件文档', url: 'https://blog.zhilu.cyou/theme' },
                 ],
             },
         ] satisfies Nav,
@@ -80,7 +77,7 @@ export default defineAppConfig({
 
     /** 左侧栏顶部 Logo */
     header: {
-        logo: 'https://weavatar.com/avatar/47c0f2e82b76d9b10eb3023df9e02e4e3fdbeaf5b74b842063f207971e7fbe7b?s=160',
+        logo: '/avatar.jpg',
         /** 展示标题文本，否则展示纯 Logo */
         showTitle: true,
         subtitle: blogConfig.subtitle,
@@ -115,23 +112,23 @@ export default defineAppConfig({
 
     stats: {
         /** 归档页面每年标题对应的年龄 */
-        birthYear: 2003,
+        birthYear: 2007,
         /** blog-stats widget 的预置文本 */
-        wordCount: '约10万',
+        wordCount: '不知道',
     },
 
     themes: {
         light: {
             icon: 'ph:sun-bold',
-            tip: '浅色模式',
+            tip: '浅色',
         },
         system: {
             icon: 'ph:monitor-bold',
-            tip: '跟随系统',
+            tip: '系统',
         },
         dark: {
             icon: 'ph:moon-bold',
-            tip: '深色模式',
+            tip: '深色',
         },
     },
 })

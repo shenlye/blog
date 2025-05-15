@@ -4,15 +4,15 @@ const appConfig = useAppConfig()
 
 <template>
     <ZRawLink class="zhilu-header">
-        <div v-if="appConfig.header.emojiTail" class="emoji-tail">
-            <span
-                v-for="(emoji, emojiIndex) in appConfig.header.emojiTail"
-                :key="emojiIndex"
-                class="splitted-char"
-                :style="{ '--delay': `${emojiIndex * .6 - 3}s` }"
-                v-text="emoji"
-            />
-        </div>
+        <!--        <div v-if="appConfig.header.emojiTail" class="emoji-tail"> -->
+        <!--            <span -->
+        <!--                v-for="(emoji, emojiIndex) in appConfig.header.emojiTail" -->
+        <!--                :key="emojiIndex" -->
+        <!--                class="splitted-char" -->
+        <!--                :style="{ '&#45;&#45;delay': `${emojiIndex * .6 - 3}s` }" -->
+        <!--                v-text="emoji" -->
+        <!--            /> -->
+        <!--        </div> -->
         <NuxtImg
             :src="appConfig.header.logo"
             class="zhilu-logo"
@@ -65,7 +65,7 @@ const appConfig = useAppConfig()
 
 .header-title {
     font-family: AlimamaFangYuanTi;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-synthesis: none;
     font-variation-settings: "wght" 600, "BEVL" 100;
 
@@ -113,15 +113,15 @@ const appConfig = useAppConfig()
     }
 }
 
-.zhilu-header:hover {
-    .emoji-tail {
-        opacity: 0.5;
-    }
-
-    .splitted-char {
-        animation-play-state: running;
-    }
-}
+//.zhilu-header:hover {
+//    .emoji-tail {
+//        opacity: 0.5;
+//    }
+//
+//    .splitted-char {
+//        animation-play-state: running;
+//    }
+//}
 
 @keyframes emoji-floating {
     50% {
