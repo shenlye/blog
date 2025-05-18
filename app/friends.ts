@@ -1,10 +1,10 @@
 import type { FeedGroup } from '~/types/feed'
 
 export default [{
-    name: '',
+    name: '友情链接',
     desc: '',
     entries: [{
-        title: '葱苓语畔',
+        title: '葱苓小筑',
         author: '葱苓sama',
         link: 'https://blog.ciraos.top',
         avatar: 'https://blog.ciraos.top/avatar.avif',
@@ -16,16 +16,20 @@ export default [{
         title: 'Silvaire\'s Blog',
         author: 'Silvaire',
         link: 'https://lunars.site',
+        feed: 'https://lunars.site/feed.rss',
         desc: '君埋泉下泥销骨，我寄人间雪满头。',
-        icon: 'https://avatars.githubusercontent.com/u/184231508?v=4',
+        icon: 'https://wsrv.nl/?url=avatars.githubusercontent.com/u/184231508?v=4&mask=circle',
         avatar: 'https://avatars.githubusercontent.com/u/184231508?v=4',
+        archs: ['VitePress', 'Cloudflare'],
         date: '2022-03-18',
     }, {
         title: '天翔TNXGの空间站',
         link: 'https://tnxgmoe.com',
+        feed: 'https://tnxgmoe.com/feed',
         avatar: 'https://api-space.tnxg.top/avatar?s=qq',
-        icon: 'https://api-space.tnxg.top/avatar?s=qq',
+        icon: 'https://tnxgmoe.com/favicon.png',
         desc: '明日尚未到来，希望凝于心上',
+        archs: ['Next.js', 'Vercel'],
         author: '天翔TNXG',
         date: '2025-05-12',
     }],

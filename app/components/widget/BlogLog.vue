@@ -1,13 +1,10 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
-const timeEstablished = appConfig.timeEstablished
 
 const blogLog = [
-    { date: '2030-08-10', content: '域名到期，预计会提前重定向迁移，届时会通知友链中的各位' },
-    { date: '2024-08-11', content: 'Nuxt Content 重构博客上线' },
-    { date: '2023-05-24', content: '更换框架为 Hexo，升级博客' },
-    { date: '2020-08-24', content: '更换到当前域名' },
-    { date: timeEstablished, content: '发布第一篇文章' },
+    { date: '2025-05-15', content: 'Astro博客的页面基本完成，但是觉得不好看，转用纸鹿写的博客' },
+    { date: '2025-03-12', content: '发布第一篇文章Hello Astro' },
+    { date: '2025-02-18', content: '第一次提交代码到Github，准备用Astro开发博客' },
 ]
 </script>
 

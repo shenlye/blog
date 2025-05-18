@@ -4,7 +4,7 @@ const appConfig = useAppConfig()
 
 <template>
     <h3 class="widget-title">
-        可访问性
+        公告
     </h3>
     <div
         class="widget-card seasonal"
@@ -14,7 +14,7 @@ const appConfig = useAppConfig()
         }"
     >
         <!-- TODO: 优化技术架构展示 -->
-        <p>占位</p>
+        <p>emmm还没想好写什么</p>
     </div>
 </template>
 

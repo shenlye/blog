@@ -2,7 +2,7 @@
 title: "Hello Astro"
 description: "折腾过一圈框架后，我决定用 Astro 来慢慢打造一个属于自己的博客，这里是我的选择过程。"
 date: 2025-03-12 00:00:00
-update: 2025-05-05 00:00:00
+updated: 2025-05-05 00:00:00
 type: story
 categories: [博客]
 tags: ["Astro", "博客", "前端", "框架"]

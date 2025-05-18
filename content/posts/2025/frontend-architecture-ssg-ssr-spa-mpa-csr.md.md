@@ -2,7 +2,7 @@
 title: "前端架构模式与页面渲染方式全解析"
 description: "架构模式和页面渲染方式的选择会直接影响网站的性能，用户体验以及SEO，甚至开发和部署的体验。本文将理清这些概念SPA、MPA、SSR、SSG、CSR。"
 date: 2025-04-24 00:00:00
-update: 2025-05-07 00:00:00
+updated: 2025-05-07 00:00:00
 type: story
 categories: [博客]
 tags: ["前端", "SSR", "SSG", "SEO", "SPA", "MPA", "Web性能"]
