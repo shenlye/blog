@@ -14,8 +14,8 @@ function handleClick() {
 <template>
     <div class="bgm-card" @click="handleClick">
         <img
-            v-if="bangumiCollectionItem.subject.images?.grid"
-            :src="bangumiCollectionItem.subject.images.grid"
+            v-if="bangumiCollectionItem.subject.images?.common"
+            :src="bangumiCollectionItem.subject.images.common"
             :alt="bangumiCollectionItem.subject.name"
             class="bgm-card__image"
         >

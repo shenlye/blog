@@ -2,7 +2,7 @@
 const appConfig = useAppConfig()
 
 const blogLog = [
-    { date: '2025-05-15', content: 'Astro博客的页面基本完成，但是觉得不好看，转用纸鹿写的博客' },
+    { date: '2025-05-15', content: 'Astro博客的页面基本完成，但是不够满意，转用纸鹿的博客' },
     { date: '2025-03-12', content: '发布第一篇文章Hello Astro' },
     { date: '2025-02-18', content: '第一次提交代码到Github，准备用Astro开发博客' },
 ]
