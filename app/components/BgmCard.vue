@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { BangumiCollectionItem } from '~/types/bangumi'
+import { getPostDate } from '~/utils/time'
 
 const props = defineProps<{
     bangumiCollectionItem: BangumiCollectionItem
@@ -24,9 +25,13 @@ function handleClick() {
                 {{ bangumiCollectionItem.subject.name_cn || bangumiCollectionItem.subject.name }}
             </h3>
             <p class="bgm-card__meta">
-                <span class="bgm-card__date">{{ bangumiCollectionItem.subject.date }}</span>
+                <span class="bgm-card__date">{{ getPostDate(bangumiCollectionItem.updated_at) }}</span>
                 <span class="bgm-card__score">评分: {{ bangumiCollectionItem.subject.score || '暂无' }}</span>
+                <span v-if="bangumiCollectionItem.rate">我的评分：{{ bangumiCollectionItem.rate }}</span>
             </p>
+          <p v-if="bangumiCollectionItem.comment" class="bgm-card__comment">
+            {{ bangumiCollectionItem.comment }}
+          </p>
             <p class="bgm-card__summary">
                 {{ bangumiCollectionItem.subject.short_summary || '暂无简介' }}
             </p>
@@ -44,6 +49,7 @@ function handleClick() {
   height: 180px;
   cursor: pointer;
   background-color: var(--c-bg-3);
+  color: var(--c-text-3);
 
   &:hover {
     transform: translateY(-3px);
@@ -81,18 +87,23 @@ function handleClick() {
     gap: 12px;
     margin: 0 0 8px;
     font-size: 12px;
-    color: var(--c-text-secondary);
+    color: var(--c-text-2);
   }
 
   &__summary {
     margin-top: auto;
     font-size: 13px;
-    color: var(--c-text-tertiary);
+    color: var(--c-text-3);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.4;
+  }
+
+  &__comment {
+    font-size: 13px;
+    color: var(--c-text-1);
   }
 }
 </style>

@@ -4,6 +4,7 @@ description: "一次普通的技能考试，一段不平凡的个人回忆。"
 date: 2025-04-14
 updated: 2025-04-29
 type: story
+image: "/images/posts/2025/skill-exam-memory/cover.jpg"
 categories: [生活]
 tags: ["考试", "生活", "回忆","经历"]
 ---

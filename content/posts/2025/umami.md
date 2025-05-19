@@ -4,6 +4,7 @@ description: "使用 Umami 来统计网站数据并使用 API 展示"
 date: 2025-05-12
 updated: 2025-05-12
 type: story
+image: "/images/posts/2025/umami/cover.jpg"
 categories: [博客]
 tags: ["Umami", "统计", "分析", "API"]
 ---
