@@ -12,7 +12,8 @@ const blogConfig = {
     bgmUsername: 'shenley',
     subtitle: '随手存个档～',
     // 长 description 利好于 SEO
-    description: 'shenlyy的个人博客，分享技术与生活。shenlyy是一名前端初学者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。',
+    description:
+    'shenlyy的个人博客，分享技术与生活。shenlyy是一名前端初学者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。',
     author: {
         name: 'shenlyy',
         avatar: 'https://blog.ykrazy.top/avatar.jpg',
@@ -38,24 +39,56 @@ const blogConfig = {
     hideContentPrefixes: ['/posts'],
 
     imageDomains: [
-        // 自动启用本域名的 Nuxt Image
-        // 'www.zhilu.cyou',
-        // '7.isyangs.cn',
+    // 自动启用本域名的 Nuxt Image
+    // 'www.zhilu.cyou',
+    // '7.isyangs.cn',
     ],
 
     // 禁止搜索引擎收录的路径
     robotsNotIndex: ['/preview', '/previews/*'],
 
     scripts: [
-        // 自己部署的 Umami 统计服务
-        { 'src': 'https://umami.ykrazy.top', 'data-website-id': '5a55402d-0e61-44cb-90a9-e14e535bdf4b', 'defer': true },
+    // 自己部署的 Umami 统计服务
+        {
+            'src': 'https://umami.ykrazy.top/script.js',
+            'data-website-id': '5a55402d-0e61-44cb-90a9-e14e535bdf4b',
+            'defer': true,
+        },
     ],
 
     // 用于 Shiki、Plain Shiki 引入代码高亮
     // 同时用于显示代码块语言对应的 Iconify Catppuccin 图标
     shiki: {
         bundledLangs: <BundledLanguage[]>['bat', 'log', 'sh', 'powershell'],
-        langs: <BundledLanguage[]>['bat', 'c', 'cpp', 'css', 'diff', 'html', 'ini', 'java', 'js', 'json', 'log', 'makefile', 'matlab', 'md', 'mdc', 'powershell', 'python', 'sh', 'sql', 'ssh-config', 'toml', 'ts', 'tsx', 'vb', 'vue', 'xml', 'yaml'],
+        langs: <BundledLanguage[]>[
+            'bat',
+            'c',
+            'cpp',
+            'css',
+            'diff',
+            'html',
+            'ini',
+            'java',
+            'js',
+            'json',
+            'log',
+            'makefile',
+            'matlab',
+            'md',
+            'mdc',
+            'powershell',
+            'python',
+            'sh',
+            'sql',
+            'ssh-config',
+            'toml',
+            'ts',
+            'tsx',
+            'vb',
+            'vue',
+            'xml',
+            'yaml',
+        ],
         themes: <BundledTheme[]>['catppuccin-latte', 'one-dark-pro'],
         defaultTheme: <BundledTheme>'catppuccin-latte',
         darkTheme: <BundledTheme>'one-dark-pro',
