@@ -10,12 +10,12 @@ export { zhCN as dateLocale } from 'date-fns/locale/zh-CN'
 const blogConfig = {
     title: 'shenlyy的存档点',
     bgmUsername: 'shenley',
-    subtitle: '随手存个档',
+    subtitle: '随手存个档～',
     // 长 description 利好于 SEO
     description: 'shenlyy的个人博客，分享技术与生活。shenlyy是一名前端初学者，结识了许多志同道合的朋友。这个博客记录了他在生活和技术学习中的点滴经历，充满启发与思考。网站界面简洁美观，内容丰富实用，人气互动活跃，涵盖了编程、生活、学习等多个领域，为读者提供了卓越的阅读体验。',
     author: {
         name: 'shenlyy',
-        avatar: '/avatar.jpg',
+        avatar: 'https://blog.ykrazy.top/avatar.jpg',
         email: '582783985@qq.com',
         homepage: 'https://blog.ykrazy.top/',
     },

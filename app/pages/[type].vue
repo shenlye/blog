@@ -45,6 +45,7 @@ watch(collectionType, () => {
                 :primary="collectionType === key"
                 @click="collectionType = key as CollectionType"
             />
+            <span class="count-text">{{ orderMap[collectionType] }}{{ data?.total ?? 0 }}部{{ contentType === 'anime' ? '动漫' : '游戏' }}</span>
         </div>
         <div v-if="error" class="error">
             {{ error.message }}
@@ -62,6 +63,8 @@ watch(collectionType, () => {
             v-model="page"
             :total-pages="totalPages"
         />
+
+      <PostComment :key="route.path" />
     </div>
 </template>
 
@@ -74,6 +77,13 @@ watch(collectionType, () => {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  align-items: center;
+}
+
+.count-text {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--c-text-light);
 }
 
 .game-list {
