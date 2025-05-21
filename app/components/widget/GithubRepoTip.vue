@@ -49,11 +49,6 @@
     will-change: transform;
     cursor: pointer;
 
-    &:hover {
-        transform: scale(1.045);
-        box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.10);
-    }
-
     &__bg {
         position: absolute;
         width: 100%;

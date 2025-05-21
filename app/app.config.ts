@@ -53,7 +53,6 @@ export default defineAppConfig({
                 items: [
                     { icon: 'ph:rss-simple-bold', text: 'Atom订阅', url: '/atom.xml' },
                     { icon: 'ph:subway-bold', text: '开往', url: 'https://www.travellings.cn/go-by-clouds.html' },
-                    { icon: 'ph:flying-saucer-bold', text: '异次元旅行', url: 'https://travel.moe/go.html?travel=on' },
                 ],
             },
             {
@@ -102,6 +101,7 @@ export default defineAppConfig({
                 { icon: 'ph:archive-bold', text: '归档', url: '/archive' },
                 { icon: 'ph:game-controller-bold', text: '游戏', url: '/game' },
                 { icon: 'ph:television-simple-bold', text: '番剧', url: '/anime' },
+                { icon: 'ph:info-bold', text: '关于', url: '/about' },
             ],
         },
     ] satisfies Nav,

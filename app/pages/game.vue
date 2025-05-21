@@ -5,7 +5,7 @@ import Pagination from '~/components/partial/Pagination.vue'
 import useBangumi from '~/composables/useBangumi'
 
 const route = useRoute()
-const contentType = route.path.includes('anime') ? 'anime' : 'game'
+const contentType = 'game'
 
 const layoutStore = useLayoutStore()
 layoutStore.setAside(['blog-stats', 'blog-log'])
@@ -16,19 +16,11 @@ const { data, error, status, totalPages } = useBangumi(contentType, collectionTy
 
 const games = computed(() => data.value?.data || [])
 
-const orderMap = computed(() => {
-    return contentType === 'anime'
-        ? {
-                wish: '想看',
-                do: '在看',
-                collect: '看过',
-            }
-        : {
-                wish: '想玩',
-                do: '正在玩',
-                collect: '玩过',
-            }
-})
+const orderMap = {
+    wish: '想玩',
+    do: '正在玩',
+    collect: '玩过',
+}
 
 watch(collectionType, () => {
     page.value = 1
@@ -45,7 +37,7 @@ watch(collectionType, () => {
                 :primary="collectionType === key"
                 @click="collectionType = key as CollectionType"
             />
-            <span class="count-text">{{ orderMap[collectionType] }}{{ data?.total ?? 0 }}部{{ contentType === 'anime' ? '动漫' : '游戏' }}</span>
+            <span class="count-text">{{ orderMap[collectionType] }}{{ data?.total ?? 0 }}部游戏</span>
         </div>
         <div v-if="error" class="error">
             {{ error.message }}
@@ -64,7 +56,7 @@ watch(collectionType, () => {
             :total-pages="totalPages"
         />
 
-      <PostComment :key="route.path" />
+        <PostComment :key="route.path" />
     </div>
 </template>
 
