@@ -4,7 +4,6 @@ description: "在Nuxt中使用useFetch来从Bangumi API获取追番和游戏数�
 date: 2025-05-19
 updated: 2025-05-19
 type: story
-image: "/images/posts/2025/bgmpage/cover.jpg"
 categories: [博客]
 tags: ["Bangumi", "前端", "Nuxt", "API", "Vue"]
 ---

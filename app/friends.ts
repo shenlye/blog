@@ -9,7 +9,7 @@ export default [
                 title: '葱苓小筑',
                 author: '葱苓sama',
                 link: 'https://blog.ciraos.top',
-                avatar: 'https://blog.ciraos.top/avatar.avif',
+                avatar: 'https://blog.ciraos.top/assets/avatar.avif',
                 desc: 'Don\'t worry, be happy.',
                 icon: 'https://blog.ciraos.top/avatar.avif',
                 archs: ['Next.js'],
