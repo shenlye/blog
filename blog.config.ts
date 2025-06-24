@@ -8,7 +8,7 @@ export { zhCN as dateLocale } from 'date-fns/locale/zh-CN'
 // 存储 nuxt.config 和 app.config 共用的配置
 // 此处为启动时需要的配置，启动后可变配置位于 app/app.config.ts
 const blogConfig = {
-    title: 'shenlyy的存档点',
+    title: 'shenley的存档点',
     bgmUsername: 'shenley',
     subtitle: '随手存个档～',
     // 长 description 利好于 SEO
