@@ -18,7 +18,7 @@ const blogConfig = {
         name: 'shenlyy',
         avatar: 'https://blog.ykrazy.top/avatar.jpg',
         email: '582783985@qq.com',
-        homepage: 'https://blog.ykrazy.top/',
+        homepage: 'https://ykrazy.top/',
     },
     copyright: {
         abbr: 'CC BY-NC-SA 4.0',

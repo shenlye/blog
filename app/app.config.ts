@@ -101,7 +101,6 @@ export default defineAppConfig({
                 { icon: 'ph:archive-bold', text: '归档', url: '/archive' },
                 { icon: 'ph:game-controller-bold', text: '游戏', url: '/game' },
                 { icon: 'ph:television-simple-bold', text: '番剧', url: '/anime' },
-                { icon: 'ph:info-bold', text: '关于', url: '/about' },
             ],
         },
     ] satisfies Nav,
